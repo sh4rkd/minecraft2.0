@@ -1,0 +1,274 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "tutorial"
+	group: ""
+	hide_quest_until_deps_visible: true
+	icon: "ftbquests:book"
+	id: "12E0D63BE328F214"
+	images: [
+		{
+			height: 1.0d
+			image: "teraphobia:item/mark_of_chaos_recipe"
+			rotation: 0.0d
+			width: 1.0d
+			x: -1.9419642857142918d
+			y: -0.9464285714285765d
+		}
+		{
+			height: 1.0d
+			image: "born_in_chaos_v1:textures/particle/chaosenergy_2.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: -3.5d
+			y: -3.5d
+		}
+		{
+			height: 1.0d
+			image: "born_in_chaos_v1:textures/particle/chaosenergy_4.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 2.5d
+			y: -3.5d
+		}
+		{
+			height: 1.0d
+			image: "born_in_chaos_v1:textures/particle/chaosenergy_6.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 1.5d
+			y: 2.0d
+		}
+		{
+			height: 1.0d
+			image: "born_in_chaos_v1:textures/particle/chaosenergy_5.png"
+			rotation: -39.0d
+			width: 1.0d
+			x: -4.0d
+			y: 1.5d
+		}
+		{
+			height: 1.0d
+			image: "born_in_chaos_v1:textures/particle/chaosenergy.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 3.0d
+			y: 1.0d
+		}
+	]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"&7Welcome to the Demonomicon, adventurer."
+				""
+				"&7This book will teach you the basics of the modpack, but also provide you with information to go through the &cRemains of Chaos &7campaign."
+				""
+				"&7&oThe Demonomicon is an ancient book born out of pure chaos. It teaches all sources of chaos and dark magic, at the cost of your own sanity."
+				""
+				"&6Click on the arrow below to see the next page."
+				""
+				"{@pagebreak}"
+				"&7This is a &equest&7, it requires one or more &etasks&7 to be completed, and may give a reward."
+				""
+				"&7In this case, this quest is only a &echeckmark task&7. Click the checkmark above to complete the &equest&7."
+				""
+				"&6&oAfter completing a quest, it can unlock more quests, or a new chapter. Many quest chapters are locked until further progression through the story."
+			]
+			hide_dependency_lines: true
+			icon: "ftbquests:book"
+			id: "6DA90162B361A85D"
+			shape: "square"
+			subtitle: "&8[Click to read information]"
+			tasks: [{
+				id: "5009DDE74895629F"
+				title: "Read the tutorial"
+				type: "checkmark"
+			}]
+			title: "&cThe Demonomicon"
+			x: -2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["6DA90162B361A85D"]
+			description: [
+				"&7In &cFear Nightfall&7, you were cursed by a nighmare, giving you permanent insomia."
+				""
+				"&7This means that &cyou cannot sleep at all&7. Beds will only serve as spawn points, and phantoms do not exist."
+			]
+			icon: "fantasyfurniture:venthyr/bed_single"
+			id: "4991A45261F83F9E"
+			rewards: [{
+				id: "107D8B85DDBC7ADE"
+				item: "minecraft:black_bed"
+				type: "item"
+			}]
+			shape: "circle"
+			subtitle: "&8[Click to read information]"
+			tasks: [{
+				id: "31C3DE06552D4B89"
+				title: "Read Sleeping Mechanics"
+				type: "checkmark"
+			}]
+			title: "Information: &eSleeping"
+			x: -1.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["4991A45261F83F9E"]
+			description: [
+				"&7The time cycles differently, with days being &e40 minutes&7 long, and usually safe, and nights being &320 minutes&7 long, but a challenge to survive. You also have &4Sanity&7, so be aware of the dark."
+				""
+				"&c&lTips:"
+				"- &7Don't waste time in the day, explore and gather provisions."
+				"- &7Be careful, passive mobs will attack you back!"
+				"- &7Use the &eLeft Alt&7 key to crawl."
+				"- &7Minimap available when crafting a Map Atlas."
+				"- &7 Chopping trees take multiple chops (depending on size), crouching breaks like normal."
+				"- &7Fear the nightfall."
+			]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "ftblibrary:icons/info_gray"
+				}
+			}
+			id: "0164FF3EAA38076D"
+			shape: "circle"
+			subtitle: "&8[Click to read information]"
+			tasks: [{
+				id: "7C11EC2B4EBEC678"
+				title: "Read New Mechanics"
+				type: "checkmark"
+			}]
+			title: "Information: &eNew Mechanics"
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["53920D8926D77BA7"]
+			description: [
+				"&7Now that you've learnt the basics, you can delve into the &cCampaign&7."
+				""
+				"&7To do so, leave this screen and move your mouse to the left panel. This will show the &ecurrent unlocked chapters&7. You will have to progress through them to unlock more chapters."
+				""
+				"&8&oGood luck, and &4fear the night&r."
+			]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "teraphobia:textures/icon.png"
+				}
+			}
+			id: "3455852556DCCB7D"
+			rewards: [{
+				icon: {
+					Count: 1
+					id: "ftbquests:custom_icon"
+					tag: {
+						Icon: "teraphobia:textures/fear_nightfall/logo.png"
+					}
+				}
+				id: "55D0D78F9D1A36F8"
+				title: "&eUnlock the Remains of Chaos Campaign"
+				type: "custom"
+			}]
+			shape: "rsquare"
+			size: 1.25d
+			subtitle: "&8[Click to read information]"
+			tasks: [{
+				id: "7535C6417961261C"
+				title: "&6Starting The Campaign"
+				type: "checkmark"
+			}]
+			x: 0.5223214285714235d
+			y: -0.5178571428571388d
+		}
+		{
+			dependencies: ["0164FF3EAA38076D"]
+			description: [
+				"Sanity if affected in many ways, here is a list:"
+				""
+				"&aPositive interactions:&r"
+				"    Staying fed"
+				"    Being near your pet or sane player"
+				"    Listening to calming melodies"
+				"    Walking on dirt paths and carpets"
+				"    Being near campfires"
+				"    Fishing"
+				"    Spawning chickens from eggs"
+				"    Earning advancements"
+				"    Breeding and shearing animals"
+				"    Trading with villagers"
+				"    Eating healthy food"
+				"    Potting flowers"
+				""
+				"&4Negative Interactions:&r"
+				"    Being hungry"
+				"    Consuming unhealthy food"
+				"    Getting wet"
+				"    Being near insane players"
+				"    Getting hurt"
+				"    Staying in the dark"
+				"    Being around monsters"
+				"    Having your movement restrained"
+				"    Listening to unsettling melodies"
+				"    Breaking infested blocks"
+				"    Trampling farmlands"
+				"    Hurting animals"
+				"    Letting your pet pass away"
+				"    Teleporting between dimensions"
+				"    Getting struck by lightning"
+				"    Provoking an enderman"
+			]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "butcher:item/brain_item"
+				}
+			}
+			id: "53920D8926D77BA7"
+			shape: "circle"
+			subtitle: "&8[Click to read information]"
+			tasks: [{
+				id: "33129C89379328D6"
+				title: "Sanity"
+				type: "checkmark"
+			}]
+			title: "Information: &eSanity"
+			x: 0.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0164FF3EAA38076D"]
+			description: [
+				"&eEvery 5 nights a horde of monsters will invade you."
+				""
+				"&7Preparing your base's defenses should be a priority. The campaign will show you certain blocks that are useful to defend your base. These hordes will become stronger with time, so you must prepare yourself well."
+			]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "quark:textures/emote/zombie.png"
+				}
+			}
+			id: "416768B6738864C8"
+			shape: "circle"
+			subtitle: "&8[Click to read information]"
+			tasks: [{
+				id: "1071A390F691B612"
+				title: "Continue"
+				type: "checkmark"
+			}]
+			title: "Information: &eHordes"
+			x: -2.5d
+			y: -2.0d
+		}
+	]
+	title: " &6Tutorial"
+}

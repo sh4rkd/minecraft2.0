@@ -1,0 +1,191 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "echapter_vii_7mother_of_chaos"
+	group: "173C7A3FFE3DDF09"
+	icon: "derelict:spider_silk_gland"
+	id: "226A42EE86B35EBF"
+	images: [
+		{
+			height: 1.0d
+			image: "derelict:textures/mob_effect/cobwebbed.png"
+			rotation: 90.0d
+			width: 1.0d
+			x: 0.4642857142857153d
+			y: -4.035714285714285d
+		}
+		{
+			height: 1.0d
+			image: "derelict:textures/mob_effect/cobwebbed.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: -0.3928571428571459d
+			y: -4.0d
+		}
+		{
+			height: 1.0d
+			image: "derelict:item/fancy_cobweb_with_spider"
+			rotation: 0.0d
+			width: 1.0d
+			x: 0.6071428571428541d
+			y: -3.25d
+		}
+		{
+			height: 1.0d
+			image: "derelict:item/fancy_cobweb_with_spider_nest"
+			rotation: 0.0d
+			width: 1.0d
+			x: -0.3571428571428541d
+			y: -3.142857142857139d
+		}
+		{
+			height: 1.0d
+			image: "geckolib:textures/blank.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: -8.0d
+			y: -2.5d
+		}
+		{
+			height: 3.7d
+			image: "teraphobia:textures/quests/arachne.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: 0.0d
+			y: -4.5d
+		}
+	]
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["46F547CE597F27C6"]
+			description: ["&7Look around the world for the Eggs of Chaos. A small structure on the surface of the Overworld that manfiests the energy of the Mother of Chaos. It contains a map leading to its lair."]
+			hide_until_deps_complete: true
+			id: "050E729D8C676708"
+			subtitle: "&8[Click to read information]"
+			tasks: [{
+				id: "4DF70C5C6DCFDAAC"
+				structure: "derelict:spider_caves/overworld_hint"
+				title: "Find the Eggs of Chaos"
+				type: "structure"
+			}]
+			title: "&eThe Eggs of Chaos"
+			x: -2.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0FC87D504016C3D7"]
+			description: [
+				"&7At the core of the world, the Mother of Chaos lies inside her egg, awaiting to be awakened and unleash the rest of chaos to the world."
+				""
+				"&7Her attacks apply random debuffs, from bleeding to posions and corrosions that remove armor. Make sure you're prepared enough with milk and lots of resources to heal."
+			]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "derelict:item/spiny_spider_spawn_egg"
+				}
+			}
+			id: "28DF6E5D08719211"
+			rewards: [{
+				auto: "no_toast"
+				command: "/playsound minecraft:entity.ender_dragon.death master @p ~ ~ ~ 2 0.7"
+				icon: "born_in_chaos_v1:seedof_chaos"
+				id: "3AD2E14270EB64DE"
+				ignore_reward_blocking: true
+				title: "&cDefeat of Chaos"
+				type: "command"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "&8[Click to read information]"
+			tasks: [{
+				entity: "derelict:arachne"
+				icon: "derelict:spider_molt"
+				id: "46B0DF02476064BD"
+				title: "&cDefeat the Mother of Chaos"
+				type: "kill"
+				value: 1L
+			}]
+			title: "&cThe Mother of Chaos"
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["4F6BB25B036E6F4E"]
+			description: ["&7Within the Spider Caves, the lair of the Mother of Chaos is present. With her egg at the middle, awaiting the infusion of chaos to release her."]
+			id: "5D0692C38E654CDA"
+			subtitle: "&8[Click to read information]"
+			tasks: [{
+				icon: "derelict:spider_egg_cluster"
+				id: "4FBF6E4A43162E6B"
+				structure: "derelict:spider_caves/boss_arena"
+				title: "&cFind the Lair of the Mother of Chaos"
+				type: "structure"
+			}]
+			title: "&eThe Mother's Lair"
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["050E729D8C676708"]
+			description: ["&7Once you got the map, find the Spider Caves, the lair must be near."]
+			id: "3D84F39434E6DDCB"
+			subtitle: "&8[Click to read information]"
+			tasks: [{
+				biome: "derelict:spider_caves"
+				icon: "derelict:fancy_cobweb_with_spider_nest"
+				id: "335D6DA47BFABE26"
+				title: "&eGet to the Spider Caves"
+				type: "biome"
+			}]
+			title: "&eThe Spider Caves"
+			x: -2.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["3D84F39434E6DDCB"]
+			description: ["&7Found in Spider Caves, these eggs are necessary for the creation of the infusion of chaos."]
+			id: "4F6BB25B036E6F4E"
+			subtitle: "&8[Click to read information]"
+			tasks: [{
+				count: 6L
+				id: "13037E031AD211DB"
+				item: { Count: 6, id: "derelict:spider_egg" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5D0692C38E654CDA"]
+			description: [
+				"&7Create the Infusion of Chaos with your Bio-Forge."
+				""
+				"{image:teraphobia:textures/quests/recipe_infusion_of_chaos.png width:130 height:100 align:center fit:true}"
+				""
+				"&cThen use it within the Mother's Lair to unleash the chaos within you, allowing you to break the egg holding The Mother of Chaos."
+			]
+			id: "0FC87D504016C3D7"
+			shape: "diamond"
+			subtitle: "&8[Click to read information]"
+			tasks: [{
+				id: "14748E7C40E94B76"
+				item: {
+					Count: 1
+					id: "teraphobia:infusion_of_chaos"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&cInfusing Chaos"
+			x: 2.0d
+			y: -1.5d
+		}
+	]
+	title: " &eChapter VI:   &cMother of Chaos"
+}

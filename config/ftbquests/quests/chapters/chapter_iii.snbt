@@ -1,0 +1,332 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_iii"
+	group: "173C7A3FFE3DDF09"
+	icon: "biomancy:creator_mix"
+	id: "04F608FB2194CB5D"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["756E38249FD9C0A6"]
+			description: [
+				"&7The Dark Arts of Flesh, also known as the Biomancy, is the art of warping the living things to make new things out of it."
+				""
+				"&7This tool, the Flesh Plunderer, allows to plunder extra body parts from mobs, but breaks easily."
+				""
+				"&eIt's just the start in this weird journey."
+			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "492D0CAE29412213"
+			rewards: [{
+				id: "5AEC6BB4A87A97E5"
+				item: {
+					Count: 1
+					id: "minecraft:enchanted_book"
+					tag: {
+						StoredEnchantments: [{
+							id: "minecraft:unbreaking"
+							lvl: 3s
+						}]
+					}
+				}
+				type: "item"
+			}]
+			shape: "square"
+			subtitle: "&8[Click to read lore and instructions]"
+			tasks: [{
+				id: "323AA8B7E320C94F"
+				item: {
+					Count: 1
+					id: "biomancy:despoil_sickle"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&dThe Dark Arts of the Flesh"
+			x: -0.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["492D0CAE29412213"]
+			description: ["&eAfter offering flesh and other items, finish the offering with a &dRegeneration/Healing 2 Potion.&r"]
+			id: "12DA3AE95243DA2F"
+			rewards: [{
+				count: 4
+				id: "0D88ADB5AD582F9E"
+				item: "minecraft:glistering_melon_slice"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "Offer adequate Tributes to the cradle and summon forth primordial messengers of exquisite flesh."
+			tasks: [{
+				id: "400901474C08B58D"
+				item: "biomancy:primordial_cradle"
+				type: "item"
+			}]
+			title: "&dPrimordial Cradle"
+			x: -0.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["12DA3AE95243DA2F"]
+			description: [""]
+			id: "11719F41D574304A"
+			rewards: [{
+				count: 2
+				id: "33FED3853F64F98A"
+				item: "biomancy:nutrient_bar"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "Note: Regular food can be used as your first bio-fuel instead of nutrient paste or bars."
+			tasks: [{
+				count: 4L
+				id: "6E09A6120613668F"
+				item: "biomancy:living_flesh"
+				type: "item"
+			}]
+			title: "&eA Living Flesh"
+			x: -0.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["11719F41D574304A"]
+			description: ["&eWhen you have all the materials and nutrients needed, click the object above you want to craft."]
+			id: "062F347ED962BB37"
+			rewards: [{
+				count: 2
+				id: "2568F8471FBA82D3"
+				item: "biomancy:nutrient_bar"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Crafting Station for your biomancy needs. Consumes nutrients to function."
+			tasks: [{
+				id: "7D43944DDF05EB88"
+				item: "biomancy:bio_forge"
+				type: "item"
+			}]
+			title: "&eBio-Forging"
+			x: -0.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["11719F41D574304A"]
+			id: "31FCCDBAF32BA0DB"
+			rewards: [{
+				count: 8
+				id: "09809AE02B1AA581"
+				item: "biomancy:nutrient_paste"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "A bio-machine that deconstructs items into their base components. The Decomposer consumes &2nutrients&r to function."
+			tasks: [{
+				id: "416CDE78A71AE472"
+				item: "biomancy:decomposer"
+				type: "item"
+			}]
+			title: "&eDecomposing"
+			x: 1.0d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"062F347ED962BB37"
+				"31FCCDBAF32BA0DB"
+			]
+			id: "0CD750755D5516BF"
+			rewards: [{
+				count: 4
+				id: "3EA271A978C7F16E"
+				item: "biomancy:breeding_stimulant"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "Bio-Alchemical Brewer. Can make various useful concoctions."
+			tasks: [{
+				id: "691FA93609D74D91"
+				item: "biomancy:bio_lab"
+				type: "item"
+			}]
+			title: "&eWeird Alchemistry"
+			x: 1.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["062F347ED962BB37"]
+			id: "21005A9FD195F670"
+			rewards: [{
+				count: 2
+				id: "4F79D31A8CCD59EA"
+				item: "minecraft:dried_kelp_block"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "A machine born from flesh that converts food and plants into extremely bio-available nutrients."
+			tasks: [{
+				id: "4D8C7E0D4600AE43"
+				item: "biomancy:digester"
+				type: "item"
+			}]
+			title: "&eEating the World"
+			x: -2.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["0CD750755D5516BF"]
+			id: "6E246CAA04E68BE3"
+			rewards: [{
+				count: 4
+				id: "286C4E039DD30E22"
+				item: "biomancy:absorption_boost"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "Bio-Tool used to inject the serums to mobs and yourself."
+			tasks: [{
+				id: "149E582672BF4B4E"
+				item: {
+					Count: 1
+					id: "biomancy:injector"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&ePowering Up"
+			x: 2.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["11719F41D574304A"]
+			id: "6031C1461A912AF0"
+			rewards: [{
+				count: 3
+				id: "73D05C9C6422E842"
+				item: "biomancy:living_flesh"
+				type: "item"
+			}]
+			shape: "square"
+			subtitle: "Extracts up to 3 items of the same type every 24 ticks from containers it's attached to, and drops them on the ground."
+			tasks: [{
+				id: "3E379302ACA3849D"
+				item: "biomancy:tongue"
+				type: "item"
+			}]
+			title: "&eWeird Tongues"
+			x: 1.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["11719F41D574304A"]
+			id: "384A9FC08BF63430"
+			rewards: [{
+				count: 3
+				id: "49CB0F22A9571C99"
+				item: "biomancy:living_flesh"
+				type: "item"
+			}]
+			shape: "square"
+			subtitle: "A fleshy sister of the hopper. Transfers up to 16 items at a time."
+			tasks: [{
+				id: "796BFD91AB99F6AA"
+				item: "biomancy:maw_hopper"
+				type: "item"
+			}]
+			title: "&eMaw Hopper"
+			x: 1.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["11719F41D574304A"]
+			description: [
+				"&7- Crafted from living flesh, the organic composition of the chest grants it remarkable resilience, ensuring the safety of its precious contents even from explosions."
+				""
+				"&7- Only its true master can unlock its contents without invoking the wrath of its razor-sharp fangs"
+			]
+			id: "05A43ACB9EF0B1CF"
+			rewards: [{
+				count: 3
+				id: "03BB0A129F1B6F1F"
+				item: "biomancy:living_flesh"
+				type: "item"
+			}]
+			shape: "square"
+			subtitle: "&8[Click to Read]"
+			tasks: [{
+				id: "32172CD4A9A7BC3B"
+				item: "biomancy:fleshkin_chest"
+				type: "item"
+			}]
+			title: "&eFleshkin Chest"
+			x: -2.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["11719F41D574304A"]
+			id: "4D34A5009E225912"
+			rewards: [{
+				count: 3
+				id: "0C5B92F1548D60A2"
+				item: "biomancy:living_flesh"
+				type: "item"
+			}]
+			shape: "square"
+			subtitle: "Cheap Shulker-like storage sac that also acts like a bundle."
+			tasks: [{
+				id: "74D6233E127ED000"
+				item: {
+					Count: 1
+					id: "biomancy:storage_sac"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "&eStorage Sac"
+			x: -2.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["062F347ED962BB37"]
+			id: "0FC6CF57B8C88CCB"
+			rewards: [{
+				id: "6675C88379D95DFE"
+				item: {
+					Count: 1
+					id: "minecraft:enchanted_book"
+					tag: {
+						StoredEnchantments: [{
+							id: "minecraft:sharpness"
+							lvl: 3s
+						}]
+					}
+				}
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "A useful Bio-Weapon that has a special ability when its bloodlust has been sated."
+			tasks: [{
+				id: "7D7900042557D5D4"
+				item: {
+					Count: 1
+					id: "biomancy:ravenous_claws"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "&eThe Ravenous Claws"
+			x: -0.5d
+			y: 9.5d
+		}
+	]
+	title: " &eChapter III:&7   Dark Arts of the Flesh"
+}

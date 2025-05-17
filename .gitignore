@@ -1,0 +1,31 @@
+# Archivos y carpetas generados por el servidor
+logs/
+backups/
+world/
+worlds/
+playerdata/
+crash-reports/
+*.log
+*.log.gz
+*.zip
+*.tar.gz
+
+# Mods (no subir archivos .jar pesados)
+mods/
+
+# Archivos de configuración sensibles o runtime
+eula.txt
+usercache.json
+banned-players.json
+banned-ips.json
+ops.json
+whitelist.json
+
+# Archivos de entorno de desarrollo
+.idea/
+.vscode/
+*.iml
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db 
