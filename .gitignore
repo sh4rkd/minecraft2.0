@@ -29,3 +29,9 @@ whitelist.json
 # Archivos del sistema operativo
 .DS_Store
 Thumbs.db 
+
+config/
+defaultconfigs/
+kubejs/
+libraries/
+scripts/

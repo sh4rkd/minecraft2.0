@@ -1,0 +1,21 @@
+-Xmx12G -Xms12G 
+-XX:+UseG1GC 
+-XX:+ParallelRefProcEnabled 
+-XX:MaxGCPauseMillis=150 
+-XX:+UnlockExperimentalVMOptions 
+-XX:+DisableExplicitGC 
+-XX:+AlwaysPreTouch 
+-XX:G1NewSizePercent=30 
+-XX:G1MaxNewSizePercent=40 
+-XX:G1HeapRegionSize=8M 
+-XX:G1ReservePercent=20 
+-XX:InitiatingHeapOccupancyPercent=15 
+-XX:G1MixedGCLiveThresholdPercent=90 
+-XX:SurvivorRatio=32 
+-XX:MaxTenuringThreshold=1 
+-XX:+PerfDisableSharedMem 
+-XX:+UseNUMA 
+-XX:-DontCompileHugeMethods 
+-XX:+UseLargePages 
+-XX:LargePageSizeInBytes=2M
+-XX:MaxRAMPercentage=85

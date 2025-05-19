@@ -21,10 +21,10 @@ services:
       resources:
         limits:
           cpus: '4'
-          memory: 12G
+          memory: 14G
         reservations:
           cpus: '4'
-          memory: 12G
+          memory: 14G
     ulimits:
       nofile:
         soft: 65536
